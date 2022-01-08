@@ -5,8 +5,8 @@ class Usuario:
 
 #region - Construtora da classe Usuario, contém como parâmetros a carteira (dinheiro disponivel) e o nome.
     def __init__(self, nome, carteira):
-    self.__nome = nome
-    self.__carteira = carteira
+        self.__nome = nome
+        self.__carteira = carteira
 #endregion
 
 #region - Método para validar se o lance proposto é válido.
@@ -59,7 +59,7 @@ class Leilao:
         if self._lance_eh_valido(lance):
             if not self._tem_lances():
                 self.menor_lance = lance.valor
-                self.primeiro_lance_usuario = lance.usuario.nome''
+                self.primeiro_lance_usuario = lance.usuario.nome
 
             self.maior_lance = lance.valor
             self.ultimo_lance_usuario = lance.usuario.nome
